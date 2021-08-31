@@ -1,0 +1,109 @@
+@font-face {
+    font-family: headerFont;
+    src: url(file:///C:/Users/sadra/Documents/trabalho%20daw/fonts/Traffolight.otf);
+  }
+
+body {
+    background-color:rgb(22, 18, 18);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-list {
+    background: #252323;
+    box-shadow: 0px 0px 10px;
+    margin: 0;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+    transition:all 200ms ease-in;
+} 
+
+.nav-item:first-child { 
+    margin-left: 42.3%;
+    margin-right: auto;
+}
+
+.carlsen-img {
+    display: block;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.9;
+    width: 980px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.header-2 {
+    background-color: #ffffff;
+    width: 100%;    
+    border: 3px solid #efefef;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a:hover {
+    color: rgb(105, 103, 103);
+    transition:all 200ms ease-in;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #252323;
+    padding-left: 17px;
+}
+
+.menu ul li a {
+    color: #252323;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: headerFont;
+}
+
+.busca {
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+input {
+    border: 2px solid #312e2e;
+    border-radius: 4px;
+    width: 70%;
+    height: 18px;
+    transition: width 0.4s ease-in-out;
+    background-image: url('file:///C:/Users/sadra/Documents/trabalho%20daw/img/search-icon.png');
+    background-position: 3px 2px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    font-family: headerFont;
+}
+  
+input[type=text]:focus {
+    width: 88%;
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
