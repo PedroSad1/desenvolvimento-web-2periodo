@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigo Tech Info</title>
+    <style>
+        body {
+            width: 100%;
+            background-image:url(https://i.stack.imgur.com/E810h.png);
+            background-repeat: repeat;
+            background-size: 100%;        
+        }
+
+        header {
+            position: relative;
+            background-color: #252323;
+            margin-top: -20px;
+            margin-left: -15px;
+            height: 4.5rem;
+            box-shadow: 0px 0px 10px #ffffff;
+        }
+
+        .nav-list{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 2rem;
+        }
+
+        .nav-list :first-child {
+            margin-right: auto;
+        }
+
+        .nav-list :hover {
+            transition:all 200ms ease-in;
+            color: rgb(3, 73, 73);
+        }
+
+        .titulo {
+            color: #ffffff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #titulo {
+            list-style: none;
+        }
+
+        #titulo :hover {
+            transition:all 200ms ease-in;
+            color: #ffffff;
+        }
+
+        .nav-items {
+            margin:  1.5rem 2rem;
+            list-style: none;
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            margin-block-start: 0.5rem;
+            margin-block-end: auto;
+            display: flex;
+            border: 3px solid #efefef;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 2rem;
+        }
+        
+        .a-1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aqua;
+            text-decoration: none;
+        }
+
+        article {
+            display: block;
+            margin: -5px auto;
+            background-color: rgb(223, 215, 215);
+            color: rgb(22, 21, 21);
+            width: 70%;
+            text-align: center;
+            font-family: monospace;
+            border: 3px solid black;
+        }
+
+        h2 {
+            display: block;
+            padding-top: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Linux Libertine','Georgia','Times',serif;            
+            font-size: 2rem;
+            color: rgb(21, 21, 26);
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: rgb(21, 21, 26);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+        }
+
+        table {
+            display: inline-block;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        tbody {
+            border: 1px solid gray;
+            background-color: white;
+        }
+
+        .content-list {
+            display: flex;
+        }
+
+        .content-list-items {
+            margin: 0 0 0 1.3em;
+            list-style-type:circle ;
+        }
+
+        .content-img {
+            width: 35%;
+            margin-top: 2rem;
+        }
+
+        footer {
+            position: relative;
+            background-color: #252323;
+            margin-top: 1rem;
+            margin-left: -7px;
+            margin-bottom: -10px;
+            height: 7rem;
+            box-shadow: 0px 0px 10px #252323;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-content {
+            padding-top: 1rem;
+        }
+
+       #input-div {
+           display: flex;
+           justify-content: center;
+           padding-top: 0.5rem;
+       }
+
+       input {
+        border: 2px solid #dfd3d3;
+        border-radius: 4px;
+        width: 50%;
+        height: 18px;
+        transition: width 0.4s ease-in-out;
+       }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li id="titulo"><h1>
+                    <a class="titulo" href="">Tech Info</a>
+                </h1></li>
+                <li class="nav-items">
+                    <a class="a-1" href="#C++">C++</a>
+                </li>
+                <li class="nav-items">
+                    <a class="a-1" href="#Python">Python</a>
+                </li>
+                <li class="nav-items">
+                    <a class="a-1" href="#Java">Java</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h2>Linguagens de Programação</h2>
+        <img class="img" src="https://computerworld.com.br/wp-content/uploads/2020/12/9-conte%C3%BAdos-para-quem-quer-se-familiarizar-com-a-%C3%A1rea-de-programa%C3%A7%C3%A3o-e-desenvolvimento.jpg" alt="">
+        <div id="C++" class="content">
+            <h3>C++</h3>
+            <hr>
+            C++ (em português: lê-se "cê mais mais", em inglês lê-se see plus plus) é uma linguagem de programação compilada multi-paradigma (seu suporte inclui linguagem imperativa, orientada a objetos e genérica) e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores. <br>
+
+Bjarne Stroustrup desenvolveu o C++ (originalmente com o nome C with Classes, que significa C com classes em português) em 1983 no Bell Labs como um adicional à linguagem C. Novas características foram adicionadas com o tempo, como funções virtuais, sobrecarga de operadores, herança múltipla, gabaritos e tratamento de exceções. Após a padronização ISO realizada em 1998 e a posterior revisão realizada em 2003, uma nova versão da especificação da linguagem foi lançada em dezembro de 2014, conhecida informalmente como C++17. <br>
+            <table>
+                <tbody class="infobox">       
+                    <img class="content-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Hello_World_C%2B%2B.png/260px-Hello_World_C%2B%2B.png" alt="">
+                    <br>
+                    <tr>
+                        <td>
+                            Paradigma:
+                        </td>
+                        <td>
+                            <ul class="content-list">
+                                <li class="content-list-items">orientada a objetos</li>
+                                <li class="content-list-items">genérica</li>
+                                <li class="content-list-items">procedural</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Surgiu em:
+                        </td>
+                        <td>
+                            1979 (padronizado em 1998)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Última versão:
+                        </td>
+                        <td>
+                            C++20
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Criado por:
+                        </td>
+                        <td>
+                            Bjarne Stroustrup
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de tipagem:</td>
+                        <td>estática,fraca,forte</td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Python" class="content">
+            <h3>Python</h3>
+            <hr>
+            Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991. Atualmente, possui um modelo de desenvolvimento comunitário, aberto e gerenciado pela organização sem fins lucrativos Python Software Foundation. Apesar de várias partes da linguagem possuírem padrões e especificações formais, a linguagem, como um todo, não é formalmente especificada. O padrão de facto é a implementação CPython. <br>
+
+A linguagem foi projetada com a filosofia de enfatizar a importância do esforço do programador sobre o esforço computacional. Prioriza a legibilidade do código sobre a velocidade ou expressividade. Combina uma sintaxe concisa e clara com os recursos poderosos de sua biblioteca padrão e por módulos e frameworks desenvolvidos por terceiros. <br>
+
+Python é uma linguagem de propósito geral de alto nível, multiparadigma, suporta o paradigma orientado a objetos, imperativo, funcional e procedural. Possui tipagem dinâmica e uma de suas principais características é permitir a fácil leitura do código e exigir poucas linhas de código se comparado ao mesmo programa em outras linguagens. Devido às suas características, ela é utilizada, principalmente, para processamento de textos, dados científicos e criação de CGIs para páginas dinâmicas para a web. Foi considerada pelo público a 3ª linguagem "mais amada", de acordo com uma pesquisa conduzida pelo site Stack Overflow em 2018 e está entre as 5 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk. <br>
+
+O nome Python teve a sua origem no grupo humorístico britânico Monty Python, criador do programa Monty Python's Flying Circus, embora muitas pessoas façam associação com o réptil do mesmo nome (em português, píton ou pitão). <br>
+<table>
+    <tbody class="infobox">       
+        <img class="content-img" src="https://www.udacity.com/blog/wp-content/uploads/2020/11/Hello-World_Blog-scaled.jpeg" alt="">
+        <br>
+        <tr>
+            <td>
+                Paradigma:
+            </td>
+            <td>
+                <ul class="content-list">
+                    <li class="content-list-items">multiparadigma</li>
+                    <li class="content-list-items">orientada a objetos</li>
+                    <li class="content-list-items">imperativa</li>
+                    <li class="content-list-items">funcional</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Surgiu em:
+            </td>
+            <td>
+                20 de fevereiro de 1991
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Última versão:
+            </td>
+            <td>
+                3.9.6
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Criado por:
+            </td>
+            <td>
+                Guido van Rossum
+            </td>
+        </tr>
+        <tr>
+            <td>Estilo de tipagem:</td>
+            <td>dinâmica,forte,duck,gradual</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+    </tbody>
+</table>
+        </div>
+        <div id="Java" class="content">
+            <h3>Java</h3>
+            <hr>
+            Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems. Em 2008 o Java foi adquirido pela empresa Oracle Corporation. Diferente das linguagens de programação modernas, que são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é interpretado por uma máquina virtual (Java Virtual Machine, mais conhecida pela sua abreviação JVM). A linguagem de programação Java é a linguagem convencional da Plataforma Java, mas não é a sua única linguagem. J2ME Para programas e jogos de computador, celular, calculadoras, ou até mesmo o rádio do carro. <br>
+            <table>
+    <tbody class="infobox">       
+        <img class="content-img" src="https://res.cloudinary.com/practicaldev/image/fetch/s--yRXL1ubB--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5frwi3opedfapokrzik6.png" alt="">
+        <br>
+        <tr>
+            <td>
+                Paradigma:
+            </td>
+            <td>
+                <ul class="content-list">
+                    <li class="content-list-items">estruturada</li>
+                    <li class="content-list-items">orientada a objetos</li>
+                    <li class="content-list-items">imperativa</li>
+                    <li class="content-list-items">funcional</li>
+                    <li class="content-list-items">genérica</li>
+                    <li class="content-list-items">reflexiva</li>
+                    <li class="content-list-items">concorrente</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Surgiu em:
+            </td>
+            <td>
+                23 de maio de 1995
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Última versão:
+            </td>
+            <td>
+                13
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Criado por:
+            </td>
+            <td>
+                James Gosling & Sun Microsystems
+            </td>
+        </tr>
+        <tr>
+            <td>Estilo de tipagem:</td>
+            <td>estática,forte</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+    </tbody>
+</table>
+        </div>
+    </article>
+    <footer>
+        <div class="footer-content"> 
+            Gostaria de receber mais artigos como este?! <br>
+            Cadastre seu e-mail e nós te notificaremos sempre que houver novidades! <br>
+            <div id="input-div"> 
+                <input type="text" placeholder="e-mail">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
