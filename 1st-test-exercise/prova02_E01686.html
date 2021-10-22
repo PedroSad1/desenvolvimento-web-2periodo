@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font-Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<style>
+/*======== VARIABLES =========*/
+:root {
+  --main-color: green;
+  --banner-color: white;
+}
+
+/* ========= RESET ========= */
+
+ul {
+    list-style: disc;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* ======== HEADER =========*/
+.navbar-collapse{
+    justify-content: end;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.navbar-center{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+/* ======== BANNER =========*/
+
+#profissao {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(68, 66, 66);
+}
+
+#banner{
+    padding-top: 10px;
+    background-color: var(--main-color);
+    justify-content: center;
+}
+
+#banner p{
+    font-weight: bold;
+    color: var(--banner-color);
+    padding-left: 38px;
+}
+
+#banner li{
+    color: var(--banner-color);
+    list-style-type: none;
+}
+
+#qr-code {
+    font-size: 100px;
+    padding-left: 40px;
+    color: var(--banner-color);
+}
+
+#habilidades li{
+    display: inline;
+}
+
+#interesses li{
+    display: inline;
+}
+
+.navbar-collapse ul li a{
+    color: white;
+}
+
+hr{
+    border-top: 1px dotted white;
+}
+
+/* ======== RESUMO =========*/
+
+#info{
+    width: 70%;
+}
+
+.info-titulo{
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+.info-subtitulo{
+    margin-top: -5px;
+    background-color: var(--main-color);
+    color: var(--banner-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* ======== FOOTER =========*/
+
+footer h2 {
+    font-size: 2.2rem;
+}
+
+footer .card-body {
+    background-color: black;
+    color: white;
+}
+
+
+</style>
+
+    <title>Prova 02 - E01686</title>
+</head>
+<body>  
+    <!--NAVBAR-->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+            <a class="mx-auto navbar-brand" href="#">
+                JAMES BOND
+            </a>
+        </div>
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><a href="" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fab fa-facebook"></i>
+                    </span>
+                </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><a href="" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                </a></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><a href="" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                </a>
+                </li>
+            </ul>
+        </div>
+      </header>
+    <main>    
+        <!--BANNER-->
+        <div class="container">
+            <div class="row">
+              <div class="col-3 d-flex" id="banner">
+                  <section class="col-12">
+                        <i class="fas fa-qrcode" id="qr-code"></i>
+                    <p>AGENTE SECRETO</p>
+                    <hr>
+                      <p>CONTATO</p> 
+                      <ul>
+                          <li><i class="fas fa-phone"></i>+44 1904-0007</li>
+                          <li><i class="fas fa-globe-americas"></i> jamesbond@gmail.com </li>
+                          <li><i class="fas fa-map-marker-alt"></i> Reino Unido</li>
+                      </ul>
+                      <p>HABILIDADES</p>
+                      <ul id="habilidades">
+                          <li> <span class="fa-stack fa-2x">
+                            <i class="fas fa-user-secret"></i>
+                        </span></li>
+                          <li>
+                            <span class="fa-stack fa-2x ">
+                                <i class="fas fa-binoculars"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="fa-stack fa-2x ">
+                                <i class="fas fa-car"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="fa-stack fa-2x ">
+                                <i class="fas fa-dumbbell"></i>
+                            </span>
+                          </li>
+                      </ul>
+                      <div>
+                        <p>INTERESSES</p>
+                        <ul id="interesses">
+                            <li class="col-4"><i class="fas fa-glass-martini-alt"></i></li>
+                            <li class="col-4"><i class="fas fa-running"></i></li>
+                            <li class="col-4"><i class="fas fa-table-tennis"></i></li>
+                            <li class="col-4"><i class="fas fa-swimmer"></i></li>
+                            <li class="col-4"><i class="fas fa-snowboarding"></i></li>
+                            <li class="col-4"><i class="fas fa-chess-knight"></i></li>
+                        </ul>
+                      </div>
+                    </section>
+                    </div>
+                    <!--INFO-->
+                       <section id="info" class="container-fluid">
+                        <img src="https://www.filmykhabar.com/data/picture/Film_Companion-james-bond-lead-image-2.jpg" alt="">
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="info-titulo">EXPERIÊNCIA</p>
+                                <p class="info-subtitulo">EXÉRCITO INGLÊS ( 1982-1988 )</p>
+                                    <ul>
+                                        <li>Espião na Guerra das Malvinas</li>
+                                        <li>Inteligência em diversas operações</li>
+                                    </ul>
+                                <p class="info-subtitulo">EMBAIXADA BRITÂNICA (1994-2000)</p>
+                                        <ul>
+                                            <li>Her Majesty’s Passaport Office</li>
+                                        </ul>
+                                <p class="info-subtitulo">ESPIÃO PARA A MI-6 ( 2006-2021 )</p>
+                                <ul>
+                                    <li>Operação - Cassino Royale (2006)</li>
+                                    <li>Operação - Quantum of Solace (2008)</li>
+                                    <li>Operação - Skyfall (2012)</li>
+                                    <li>Operação - Spectre (2015)</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <p class="info-titulo">EDUCAÇÃO</p>
+                                <p class="info-subtitulo">RELAÇÕES INTERNACIONAIS - OXFORD UNIVERSITY</p>
+                                <p>Ensino Superior - Graduação (1990-1994)</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="info-titulo">INFORMAÇÕES ADICIONAIS</p>
+                            <p> Meu nome é Bond, James Bond e nasci em 1964 na cidade de Oxford, Reino Unido. Já trabalhei em diversas operações policiais, militares e secretas, e sou amplamente conhecido como agente 007. Possuo ampla experiência para quaisquer atividades que necessitem de um agente secreto. <br> Além das experiências militares, possuo ótima lábia.
+                                <br> Disponho de diversos aparatos tecnológicos para me ajudar na realização de meu serviço, característica que me diferencia de outros agentes.
+                                <br> Sou um exímio atirador com licença 00 para matar e perito em artes marciais.
+                                <br> Aprecio vodka-martini (Batido. Não mexido) <br>
+                                <button class="btn btn-success" type="button">
+                                    Bond já tomou <span class="badge"> 0 </span> martinis.
+                                  </button>
+                            </p>
+                        </div>
+                        </div>
+                       </section>
+                </div>
+            </div>
+    </main>
+
+    <!--FOOOTER-->
+<footer class="card text-center">
+    <div class="card-body">
+        <h2 class="card-title">Agente 007</h2>
+        <p class="card-text">&copy copyright 2021 - Todos os direitos reservados
+        </p>
+    </div>
+  </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        alert("Bem-vindo ao Currículo de James Bond!")
+
+        var contador = document.querySelector('.badge');
+
+        document.querySelector('button').addEventListener('click', function(){
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+});
+    </script>
+</body>
+</html>
